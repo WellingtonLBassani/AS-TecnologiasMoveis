@@ -5,7 +5,7 @@ import com.example.`as`.model.PokemonResponse
 
 fun PokemonResponse.toPokemon() = Pokemon(
     id = id,
-    nome = name.replaceFirstChar { it.uppercase() }, // Deixa o nome bonito (ex: Bulbasaur)
+    nome = name.replaceFirstChar { it.uppercase() },
     imagemUrl = sprites.frontDefault,
-    tipo = types.first().type.name // Pega o primeiro tipo do Pokémon
+    tipo = types.first().type.name
 )
